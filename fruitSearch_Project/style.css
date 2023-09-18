@@ -1,0 +1,70 @@
+/* * {
+} */
+
+/* :focus {
+} */
+
+body {
+  background: linear-gradient(90deg, yellow, orangered);
+  display: flex;
+  align-items: center;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.search-container {
+  display: block;
+  position: relative;
+  width: 260px;
+  height: 400px;
+  margin: auto;
+  top: 400px;
+}
+
+.search-container input,
+.search-container .suggestions {
+  width: 250px;
+}
+
+/* .search-container input {
+} */
+
+.search-container .suggestions {
+  display: absolute;
+  height: 300px;
+  visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+ul {
+  background-color: rgba(255, 255, 255, 0.5);
+  list-style-type: none;
+  margin: 0px;
+  padding: 5px;
+  width: 254px;
+  visibility: hidden;
+}
+
+.has-suggestions {
+  visibility: visible;
+}
+
+ul li {
+  margin: 0px;
+  padding: 5px;
+}
+
+ul li:hover {
+  background-color: orangered;
+}
+
+input {
+  padding: 5px;
+}
+
+.match-text {
+  font-weight: bold;
+}
