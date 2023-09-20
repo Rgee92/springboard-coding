@@ -1,0 +1,20 @@
+#movie-container{
+    position: absolute;
+    top: 1vh;
+    right: 5vw;
+    width: 50vw;
+    height: 90vh;
+    overflow: auto;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: grey;
+    text-align: center;
+}
+
+.movie-block{
+    background-color: lightgrey;
+    padding: 10px;
+    height: 20%;
+    margin: 5px;
+    display: inline-block;
+}
