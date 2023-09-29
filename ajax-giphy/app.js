@@ -4,20 +4,16 @@ const getImage = async (search) => {
     const urls = res.data.data[ randomIndex ].images.original.url
     const images = $("<img>").attr({ src: urls })
     $(images).appendTo(".col")
-  }
-  
+}
 
-// form logic
 $('#search-form').submit((e) => {
     e.preventDefault()
     $(".btn").on("click", () => {
       getImage($("#search").val())
       $("#search").val("")
-    })
   })
-// delete all GIFs
+})
+
 $(".delete-all-btn").on('click', () => {
     $(".col").empty()
 });
-
-// console.log("Let's get this party started!");
