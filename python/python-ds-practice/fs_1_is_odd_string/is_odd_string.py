@@ -29,3 +29,11 @@ def is_odd_string(word):
     """
 
     # Hint: you may find the ord() function useful here
+
+    code = ord('z')
+    sum = 0
+    for char in word:
+        char_pos = 26 - (code - ord(char))
+        sum += char_pos
+    
+    return (sum % 2 == 1)
