@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}<title>Madlib - Create</title>{% endblock %}
+
+{% block header %}<h1>Create Your Madlib:</h1>{% endblock %}
+
+{% block content %}
+<form id="create-form" action="/create" method="POST">
+    <label>Wrap each {prompt} in curly braces.<br>
+        Use underscores or dashes instead of spaces in prompts. E.g. {past-tense-verb}, {gross_adjective}<br>
+        Use unique names for prompts where needed. E.g. {noun}, {noun2}
+    </label>
+    <br>
+    <textarea rows="5" cols="60" name="text" placeholder="There once was a {noun} from {place}..."></textarea>
+    <br>
+    <button id="submit-btn">Create Madlib</button>
+</form>
+<script src="/static/create.js"></script>
+{% endblock %}
